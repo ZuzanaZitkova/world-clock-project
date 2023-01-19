@@ -14,28 +14,31 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="city">
         <option value="'">Select a city</option>
-        <option value="london">London</option>
-        <option value="new-york">New York</option>
-        <option value="Auckland">Auckland</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Pacific/Auckland">Auckland</option>
       </select>
 
-      <div class="city">
-        <div>
-          <h2>Mexico City</h2>
+      
+      <div id="cities">
+        <div class="city">
+          <div>
+            <h2>Mexico City</h2>
 
-          <div class="date" id="date-america">9. January 2023</div>
+            <div class="date" id="date-america">9. January 2023</div>
+          </div>
+          <div class="time" id="time-america">19:30:24</div>
         </div>
-        <div class="time" id="time-america">19:30:24</div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Prague</h2>
+        <div class="city">
+          <div>
+            <h2>Prague</h2>
 
-          <div class="date" id="czech-date">10. January 2023</div>
+            <div class="date" id="czech-date">10. January 2023</div>
+          </div>
+          <div class="time" id="czech-time">14:30:23</div>
         </div>
-        <div class="time" id="czech-time">14:30:23</div>
       </div>
     </div>
     <footer>
