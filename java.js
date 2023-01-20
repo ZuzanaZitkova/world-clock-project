@@ -18,6 +18,10 @@ function setTime() {
 
 function cityTimeReplace(event) {
   let cityTimeTarget = event.target.value;
+
+  if (cityTimeTarget === 'current-location') {
+    cityTimeTarget = moment.tz.guess();
+  }
   let cityTime = moment().tz(cityTimeTarget);
   let cityName = cityTimeTarget.replace('_', ' ').split('/')[1];
   let selectCities = document.querySelector('#cities');
@@ -25,8 +29,6 @@ function cityTimeReplace(event) {
            <div class="city">
            <div>
             <h2>${cityName}</h2>
-         
-         
           <div class="date">${cityTime.format('MMM Do YYYY')}</div>
            </div>
           <div class="time">${cityTime.format('h:mm:ss A')}</div>
